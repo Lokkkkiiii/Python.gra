@@ -29,7 +29,7 @@ def create_meteory():
 
 def check_collision(player_y, player_x, meteory):
     for pos in meteory:
-        if  pos[1] == player_x and pos[0] == player_y:
+        if  pos[1] == player_x and pos[0] == player_y+1:
             return True
     return False
 
